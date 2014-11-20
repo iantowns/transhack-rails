@@ -1,15 +1,22 @@
 <h1>Listing insts</h1>
+
+<%= link_to 'New inst', new_inst_path %>
  
 <table>
   <tr>
     <th>Name</th>
     <th>Location</th>
+    <th colspan="2"></th>
   </tr>
  
-  <% @insts.each do |inst| %>
-    <tr>
-      <td><%= inst.name %></td>
-      <td><%= inst.location %></td>
-    </tr>
-  <% end %>
+<% @insts.each do |inst| %>
+  <tr>
+    <td><%= inst.name %></td>
+    <td><%= inst.location %></td>
+    <td><%= link_to 'Show', inst_path(inst) %></td>
+    <td><%= link_to 'Edit', edit_inst_path(inst) %></td>
+	<td><%= link_to 'Destroy', inst_path(inst),
+	                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
 </table>
