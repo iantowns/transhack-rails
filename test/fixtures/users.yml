@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  pemail: false
+  insts_id: 
+  orgs_id: 
+  bio: MyText
+
+two:
+  name: MyString
+  pemail: false
+  insts_id: 
+  orgs_id: 
+  bio: MyText

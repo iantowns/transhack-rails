@@ -1,0 +1,15 @@
+<h1>Listing insts</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+  </tr>
+ 
+  <% @insts.each do |inst| %>
+    <tr>
+      <td><%= inst.name %></td>
+      <td><%= inst.location %></td>
+    </tr>
+  <% end %>
+</table>

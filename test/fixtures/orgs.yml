@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  owner_id: 
+  contact: MyString
+  summary: MyString
+  inst_id: 
+  events_id: 
+
+two:
+  name: MyString
+  owner_id: 
+  contact: MyString
+  summary: MyString
+  inst_id: 
+  events_id: 
