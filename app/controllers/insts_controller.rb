@@ -39,13 +39,13 @@ class InstsController < ApplicationController
     @inst = Inst.find(params[:id])
     @inst.destroy
  
-    redirect_to inst_path
+    redirect_to insts_path
   end
 
   
   private
     def inst_params
-      params.require(:inst).permit(:name, :location)
+      params.require(:inst).permit(:name, :location, :contact, :summary, :url)
     end
     
     
